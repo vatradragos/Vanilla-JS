@@ -1,0 +1,1049 @@
+<!-- Created by Dragoş Vatră  0743503240  vatradragos@yaoo.com -->
+<!-- Start Web Page -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start <head> elements -->
+    <head>
+        <meta charset="utf-8">
+        <title>Cozy Home Test - Index - Created and built by Dragoș Vatră</title>
+		<link rel="icon" type="image/png" href="favicon/favicon.png"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Dragos Vatra Portfolio" name="keywords">
+        <meta content="Dragos Vatra Portfolio" name="description">
+        <!-- Start Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <!-- Stop Google Font -->
+        <!-- Start CSS Libreries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!-- Stop CSS Libreries -->
+        
+    </head>
+	
+	<style>
+		body {
+			margin-left: auto;
+			margin-right: auto;
+			}
+		
+		img:hover {
+			filter: blur(5px);
+		}
+			
+		.col-lg-5:hover {
+			transform: scale(1.05);
+		}
+	</style>
+<!-- Stop <head> elements -->
+<!-- Start <body> elements -->
+    <body class="bg-dark">
+
+        <!-- Start Javascript -->
+        <script>
+			// start json parse
+            var json = '{"quiz": {"q1": {"question": "What living space does your house have?","options": ["More then 75mp","More then 100mp","More then 150mp"],"answer": " "}, "q2": {"question": "How much time do you like to spend in your house?","options": ["Less then one hour","More then three hours","More then 6 hours"],"answer": " "},"q3": {"question": "What kind of view does your house have?","options": ["Not a great one","I like my view","A splendid view"],"answer": " "},"q4": {"question": "How welcoming do you think your house is?","options": ["Not very welcoming","I have a worm house","Very, very welcoming"],"answer": " "}, "q5": {"question": "What is the most comfortable room in your house?","options": ["Livingroom","Badroom","Bathroom"],"answer": " "}, "q6": {"question": "What colors predominate in your home?","options": ["White, red and blue","Blue, maron and orange","Black, maron and white"],"answer": " "}, "q7": {"question": "At what level is the noise pollution in your house?","options": ["Very hight","Bearable","Not a sound"],"answer": " "}, "q8": {"question": "Do you compare your home with part of your personality?","options": ["My hart","My brain","My legs"],"answer": " "}, "q9": {"question": "At what time do you redecorate your house?","options": ["Once a year","Once every three years","Once every ten years"],"answer": " "}, "q10": {"question": "How often do you think of moving out of your house?","options": ["Never","Once every 5 years","Every day"],"answer": " "}}}';
+            var data = JSON.parse(json);
+			// stop json parse
+			
+			// start hero title
+			var heroTitleContainer = document.createElement("div");
+			heroTitleContainer.classList.add("container-fluid");
+			heroTitleContainer.setAttribute("id", "firstC");
+			document.body.appendChild(heroTitleContainer);
+			
+			window.addEventListener('load', function() {
+				var element = document.getElementById("firstC");
+				  setTimeout(function() {
+					element.style.transform = "transform(20px, 20px)";
+				  }, 200);
+			})
+			
+			var heroTitleRow = document.createElement("div");
+			heroTitleRow.classList.add("row");
+			heroTitleRow.classList.add("tex-center");
+			heroTitleRow.style.padding = "50px 10px 20px 30px";
+			heroTitleRow.style.border = "white 2px solid";
+			heroTitleRow.style.borderWidth = "10px 5px 10px 20px";
+			heroTitleRow.style.borderRadius = "10px";
+			heroTitleContainer.appendChild(heroTitleRow);
+			
+			var heroTitleCol = document.createElement("div");
+			heroTitleCol.classList.add("col");
+			heroTitleCol.classList.add("tex-center");
+			heroTitleRow.appendChild(heroTitleCol);
+			
+			var heroTitle = document.createElement("p");
+			heroTitle.classList.add("h1");
+			heroTitle.classList.add("text-center");
+			heroTitle.classList.add("text-white");
+			heroTitle.style.textAlign = "center";
+			heroTitle.style.fontSize = "3em";
+			heroTitle.style.textDecoration = "underline overline";
+			var heroText = document.createTextNode("Cozy Home Test");
+			heroTitle.appendChild(heroText);
+			heroTitleCol.appendChild(heroTitle);
+
+			var heroSubtitle = document.createElement("p");
+			heroSubtitle.classList.add("h3");
+			heroSubtitle.classList.add("text-center");
+			heroSubtitle.classList.add("text-white");
+			heroSubtitle.style.textAlign = "center";
+			heroSubtitle.style.fontSize = "2em";
+			var heroSubText = document.createTextNode("Hi and welcome to our test!");
+			heroSubtitle.appendChild(heroSubText);
+			heroTitleCol.appendChild(heroSubtitle);
+
+			// stop hero title
+
+            // start hero container
+            var heroContainer = document.createElement("div");
+            heroContainer.classList.add("container-fluid");
+            document.body.appendChild(heroContainer);
+
+            var heroRow = document.createElement("div");
+            heroRow.classList.add("row");
+            heroRow.style.margin = "10px -10px 10px -10px";
+            heroContainer.appendChild(heroRow);
+
+            var heroCol = document.createElement("div");
+            heroCol.classList.add("col");
+            heroRow.appendChild(heroCol);
+
+            var image = document.createElement("img");
+            image.src = "images/hero.jpg";
+            image.classList.add("img-fluid");
+            image.style.borderRadius = "10px";
+            heroCol.appendChild(image);
+            // stop hero container
+
+            // start body container
+            var bodyContainer = document.createElement("div");
+            bodyContainer.classList.add("container-fluid");
+			bodyContainer.classList.add("tex-center");
+			bodyContainer.style.marginLeft = "auto";
+			bodyContainer.style.marginRight = "auto";
+            document.body.appendChild(bodyContainer);
+
+            // start title container
+            var titleContainer = document.createElement("div");
+            titleContainer.classList.add("container-fluid");
+            bodyContainer.appendChild(titleContainer);
+
+            var titleRow = document.createElement("div");
+            titleRow.classList.add("row");
+            titleContainer.appendChild(titleRow);
+
+            var titleCol = document.createElement("div");
+            titleCol.classList.add("col");
+            titleRow.appendChild(titleCol);
+
+            var title = document.createElement("p");
+            title.classList.add("h3");
+            title.classList.add("text-center");
+            title.classList.add("text-white");
+            title.style.padding = "20px";
+            var titleText = document.createTextNode("Our test can reveal to you how comfortable your home is!");
+            title.appendChild(titleText);
+            titleCol.appendChild(title);
+            // stop title container
+			
+			// start quiz container
+			var quizContainer = document.createElement("div");
+			quizContainer.classList.add("container-fluid");
+			quizContainer.style.paddingLeft = "12.5%";
+            bodyContainer.appendChild(quizContainer);
+			
+			// start row 1
+			var q_1_2Row = document.createElement("div");
+            q_1_2Row.classList.add("row");
+			q_1_2Row.classList.add("text-center");
+            quizContainer.appendChild(q_1_2Row);
+			
+			var q_1Col = document.createElement("div");
+			q_1Col.classList.add("col-lg-5");
+			q_1Col.classList.add("col-md-5");
+            q_1Col.classList.add("col-sm-12");
+			q_1Col.style.margin = "10px 10px 10px 10px";
+			q_1Col.style.background = "#1947bd";
+			q_1Col.style.borderRadius = "10px";
+			q_1Col.style.cursor = "crosshair";
+            q_1_2Row.appendChild(q_1Col);
+			
+			var question_1 = document.createElement("p");
+            question_1.classList.add("h5");
+            question_1.classList.add("text-center");
+            question_1.classList.add("text-white");
+            question_1.style.padding = "1em";
+            var question_1Text = document.createTextNode(data.quiz.q1.question);
+            question_1.appendChild(question_1Text);
+            q_1Col.appendChild(question_1);
+			
+			var form_1 = document.createElement("div");
+			form_1.classList.add("form-check");
+			var input_1_1 = document.createElement("div");
+			input_1_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_1" id="op_1.1">' + data.quiz.q1.options[0] + '<br><br>';
+			input_1_1.classList.add("text-center");
+			input_1_1.classList.add("text-white");
+			var input_1_2 = document.createElement("div");
+			input_1_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_1" id="op_1.2">' + data.quiz.q1.options[1] + '<br><br>';
+			input_1_2.classList.add("text-center");
+			input_1_2.classList.add("text-white");
+			var input_1_3 = document.createElement("div");
+			input_1_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_1" id="op_1.3">' + data.quiz.q1.options[2] + '<br><br>';
+			input_1_3.classList.add("text-center");
+			input_1_3.classList.add("text-white");
+			form_1.appendChild(input_1_1);
+			form_1.appendChild(input_1_2);
+			form_1.appendChild(input_1_3);
+			q_1Col.appendChild(form_1);
+			
+			var q_2Col = document.createElement("div");
+            q_2Col.classList.add("col-lg-5");
+			q_2Col.classList.add("col-md-5");
+            q_2Col.classList.add("col-sm-12");
+			q_2Col.style.margin = "10px 10px 10px 10px";
+			q_2Col.style.background = "#1947bd";
+			q_2Col.style.borderRadius = "10px";
+			q_2Col.style.cursor = "crosshair";
+            q_1_2Row.appendChild(q_2Col);
+			
+			var question_2 = document.createElement("p");
+            question_2.classList.add("h5");
+            question_2.classList.add("text-center");
+            question_2.classList.add("text-white");
+            question_2.style.padding = "1em";
+            var question_2Text = document.createTextNode(data.quiz.q2.question);
+            question_2.appendChild(question_2Text);
+            q_2Col.appendChild(question_2);
+			
+			var form_2 = document.createElement("div");
+			form_2.classList.add("form-check");
+			var input_2_1 = document.createElement("div");
+			input_2_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_2" id="op_2.1">' + data.quiz.q2.options[0] + '<br><br>';
+			input_2_1.classList.add("text-center");
+			input_2_1.classList.add("text-white");
+			var input_2_2 = document.createElement("div");
+			input_2_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_2" id="op_2.2">' + data.quiz.q2.options[1] + '<br><br>';
+			input_2_2.classList.add("text-center");
+			input_2_2.classList.add("text-white");
+			var input_2_3 = document.createElement("div");
+			input_2_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_2" id="op_2.3">' + data.quiz.q2.options[2] + '<br><br>';
+			input_2_3.classList.add("text-center");
+			input_2_3.classList.add("text-white");
+			form_2.appendChild(input_2_1);
+			form_2.appendChild(input_2_2);
+			form_2.appendChild(input_2_3);
+			q_2Col.appendChild(form_2);
+			// stop row 1
+			
+			// start row 2
+			var q_3_4Row = document.createElement("div");
+            q_3_4Row.classList.add("row");
+			q_3_4Row.classList.add("text-center");
+            quizContainer.appendChild(q_3_4Row);
+			
+			var q_3Col = document.createElement("div");
+            q_3Col.classList.add("col-lg-5");
+			q_3Col.classList.add("col-md-5");
+            q_3Col.classList.add("col-sm-12");
+			q_3Col.style.margin = "10px 10px 10px 10px";
+			q_3Col.style.background = "#1947bd";
+			q_3Col.style.borderRadius = "10px";
+			q_3Col.style.cursor = "crosshair";
+            q_3_4Row.appendChild(q_3Col);
+			
+			var question_3 = document.createElement("p");
+            question_3.classList.add("h5");
+            question_3.classList.add("text-center");
+            question_3.classList.add("text-white");
+            question_3.style.padding = "1em";
+            var question_3Text = document.createTextNode(data.quiz.q3.question);
+            question_3.appendChild(question_3Text);
+            q_3Col.appendChild(question_3);
+			
+			var form_3 = document.createElement("div");
+			form_3.classList.add("form-check");
+			var input_3_1 = document.createElement("div");
+			input_3_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_3" id="op_3.1">' + data.quiz.q3.options[0] + '<br><br>';
+			input_3_1.classList.add("text-center");
+			input_3_1.classList.add("text-white");
+			var input_3_2 = document.createElement("div");
+			input_3_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_3" id="op_3.2">' + data.quiz.q3.options[1] + '<br><br>';
+			input_3_2.classList.add("text-center");
+			input_3_2.classList.add("text-white");
+			var input_3_3 = document.createElement("div");
+			input_3_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_3" id="op_3.3">' + data.quiz.q3.options[2] + '<br><br>';
+			input_3_3.classList.add("text-center");
+			input_3_3.classList.add("text-white");
+			form_3.appendChild(input_3_1);
+			form_3.appendChild(input_3_2);
+			form_3.appendChild(input_3_3);
+			q_3Col.appendChild(form_3);
+			
+			var q_4Col = document.createElement("div");
+            q_4Col.classList.add("col-lg-5");
+			q_4Col.classList.add("col-md-5");
+            q_4Col.classList.add("col-sm-12");
+			q_4Col.style.margin = "10px 10px 10px 10px";
+			q_4Col.style.background = "#1947bd";
+			q_4Col.style.borderRadius = "10px";
+			q_4Col.style.cursor = "crosshair";
+            q_3_4Row.appendChild(q_4Col);
+			
+			var question_4 = document.createElement("p");
+            question_4.classList.add("h5");
+            question_4.classList.add("text-center");
+            question_4.classList.add("text-white");
+            question_4.style.padding = "1em";
+            var question_4Text = document.createTextNode(data.quiz.q4.question);
+            question_4.appendChild(question_4Text);
+            q_4Col.appendChild(question_4);
+			
+			var form_4 = document.createElement("div");
+			form_4.classList.add("form-check");
+			var input_4_1 = document.createElement("div");
+			input_4_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_4" id="op_4.1">' + data.quiz.q4.options[0] + '<br><br>';
+			input_4_1.classList.add("text-center");
+			input_4_1.classList.add("text-white");
+			var input_4_2 = document.createElement("div");
+			input_4_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_4" id="op_4.2">' + data.quiz.q4.options[1] + '<br><br>';
+			input_4_2.classList.add("text-center");
+			input_4_2.classList.add("text-white");
+			var input_4_3 = document.createElement("div");
+			input_4_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_4" id="op_4.3">' + data.quiz.q4.options[2] + '<br><br>';
+			input_4_3.classList.add("text-center");
+			input_4_3.classList.add("text-white");
+			form_4.appendChild(input_4_1);
+			form_4.appendChild(input_4_2);
+			form_4.appendChild(input_4_3);
+			q_4Col.appendChild(form_4);
+			// stop row 2
+			
+			//start row 3
+			var q_5_6Row = document.createElement("div");
+            q_5_6Row.classList.add("row");
+			q_5_6Row.classList.add("text-center");
+            quizContainer.appendChild(q_5_6Row);
+			
+			var q_5Col = document.createElement("div");
+            q_5Col.classList.add("col-lg-5");
+			q_5Col.classList.add("col-md-5");
+            q_5Col.classList.add("col-sm-12");
+			q_5Col.style.margin = "10px 10px 10px 10px";
+			q_5Col.style.background = "#1947bd";
+			q_5Col.style.borderRadius = "10px";
+			q_5Col.style.cursor = "crosshair";
+            q_5_6Row.appendChild(q_5Col);
+			
+			var question_5 = document.createElement("p");
+            question_5.classList.add("h5");
+            question_5.classList.add("text-center");
+            question_5.classList.add("text-white");
+            question_5.style.padding = "1em";
+            var question_5Text = document.createTextNode(data.quiz.q5.question);
+            question_5.appendChild(question_5Text);
+            q_5Col.appendChild(question_5);
+			
+			var form_5 = document.createElement("div");
+			form_5.classList.add("form-check");
+			var input_5_1 = document.createElement("div");
+			input_5_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_5" id="op_5.1">' + data.quiz.q5.options[0] + '<br><br>';
+			input_5_1.classList.add("text-center");
+			input_5_1.classList.add("text-white");
+			var input_5_2 = document.createElement("div");
+			input_5_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_5" id="op_5.2">' + data.quiz.q5.options[1] + '<br><br>';
+			input_5_2.classList.add("text-center");
+			input_5_2.classList.add("text-white");
+			var input_5_3 = document.createElement("div");
+			input_5_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_5" id="op_5.3">' + data.quiz.q5.options[2] + '<br><br>';
+			input_5_3.classList.add("text-center");
+			input_5_3.classList.add("text-white");
+			form_5.appendChild(input_5_1);
+			form_5.appendChild(input_5_2);
+			form_5.appendChild(input_5_3);
+			q_5Col.appendChild(form_5);
+			
+			var q_6Col = document.createElement("div");
+            q_6Col.classList.add("col-lg-5");
+			q_6Col.classList.add("col-md-5");
+            q_6Col.classList.add("col-sm-12");
+			q_6Col.style.margin = "10px 10px 10px 10px";
+			q_6Col.style.background = "#1947bd";
+			q_6Col.style.borderRadius = "10px";
+			q_6Col.style.cursor = "crosshair";
+            q_5_6Row.appendChild(q_6Col);
+			
+			var question_6 = document.createElement("p");
+            question_6.classList.add("h5");
+            question_6.classList.add("text-center");
+            question_6.classList.add("text-white");
+            question_6.style.padding = "1em";
+            var question_6Text = document.createTextNode(data.quiz.q6.question);
+            question_6.appendChild(question_6Text);
+            q_6Col.appendChild(question_6);
+			
+			var form_6 = document.createElement("div");
+			form_6.classList.add("form-check");
+			var input_6_1 = document.createElement("div");
+			input_6_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_6" id="op_6.1">' + data.quiz.q6.options[0] + '<br><br>';
+			input_6_1.classList.add("text-center");
+			input_6_1.classList.add("text-white");
+			var input_6_2 = document.createElement("div");
+			input_6_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_6" id="op_6.2">' + data.quiz.q6.options[1] + '<br><br>';
+			input_6_2.classList.add("text-center");
+			input_6_2.classList.add("text-white");
+			var input_6_3 = document.createElement("div");
+			input_6_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_6" id="op_6.3">' + data.quiz.q6.options[2] + '<br><br>';
+			input_6_3.classList.add("text-center");
+			input_6_3.classList.add("text-white");
+			form_6.appendChild(input_6_1);
+			form_6.appendChild(input_6_2);
+			form_6.appendChild(input_6_3);
+			q_6Col.appendChild(form_6);
+			//stop row 3
+			
+			//start row 4
+			var q_7_8Row = document.createElement("div");
+            q_7_8Row.classList.add("row");
+			q_7_8Row.classList.add("text-center");
+            quizContainer.appendChild(q_7_8Row);
+			
+			var q_7Col = document.createElement("div");
+            q_7Col.classList.add("col-lg-5");
+			q_7Col.classList.add("col-md-5");
+            q_7Col.classList.add("col-sm-12");
+			q_7Col.style.margin = "10px 10px 10px 10px";
+			q_7Col.style.background = "#1947bd";
+			q_7Col.style.borderRadius = "10px";
+			q_7Col.style.cursor = "crosshair";
+            q_7_8Row.appendChild(q_7Col);
+			
+			var question_7 = document.createElement("p");
+            question_7.classList.add("h5");
+            question_7.classList.add("text-center");
+            question_7.classList.add("text-white");
+            question_7.style.padding = "1em";
+            var question_7Text = document.createTextNode(data.quiz.q7.question);
+            question_7.appendChild(question_7Text);
+            q_7Col.appendChild(question_7);
+			
+			var form_7 = document.createElement("div");
+			form_7.classList.add("form-check");
+			var input_7_1 = document.createElement("div");
+			input_7_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_7" id="op_7.1">' + data.quiz.q7.options[0] + '<br><br>';
+			input_7_1.classList.add("text-center");
+			input_7_1.classList.add("text-white");
+			var input_7_2 = document.createElement("div");
+			input_7_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_7" id="op_7.2">' + data.quiz.q7.options[1] + '<br><br>';
+			input_7_2.classList.add("text-center");
+			input_7_2.classList.add("text-white");
+			var input_7_3 = document.createElement("div");
+			input_7_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_7" id="op_7.3">' + data.quiz.q7.options[2] + '<br><br>';
+			input_7_3.classList.add("text-center");
+			input_7_3.classList.add("text-white");
+			form_7.appendChild(input_7_1);
+			form_7.appendChild(input_7_2);
+			form_7.appendChild(input_7_3);
+			q_7Col.appendChild(form_7);
+			
+			var q_8Col = document.createElement("div");
+            q_8Col.classList.add("col-lg-5");
+			q_8Col.classList.add("col-md-5");
+            q_8Col.classList.add("col-sm-12");
+			q_8Col.style.margin = "10px 10px 10px 10px";
+			q_8Col.style.background = "#1947bd";
+			q_8Col.style.borderRadius = "10px";
+			q_8Col.style.cursor = "crosshair";
+            q_7_8Row.appendChild(q_8Col);
+			
+			var question_8 = document.createElement("p");
+            question_8.classList.add("h5");
+            question_8.classList.add("text-center");
+            question_8.classList.add("text-white");
+            question_8.style.padding = "1em";
+            var question_8Text = document.createTextNode(data.quiz.q8.question);
+            question_8.appendChild(question_8Text);
+            q_8Col.appendChild(question_8);
+			
+			var form_8 = document.createElement("div");
+			form_8.classList.add("form-check");
+			var input_8_1 = document.createElement("div");
+			input_8_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_8" id="op_8.1">' + data.quiz.q8.options[0] + '<br><br>';
+			input_8_1.classList.add("text-center");
+			input_8_1.classList.add("text-white");
+			var input_8_2 = document.createElement("div");
+			input_8_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_8" id="op_8.2">' + data.quiz.q8.options[1] + '<br><br>';
+			input_8_2.classList.add("text-center");
+			input_8_2.classList.add("text-white");
+			var input_8_3 = document.createElement("div");
+			input_8_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_8" id="op_8.3">' + data.quiz.q8.options[2] + '<br><br>';
+			input_8_3.classList.add("text-center");
+			input_8_3.classList.add("text-white");
+			form_8.appendChild(input_8_1);
+			form_8.appendChild(input_8_2);
+			form_8.appendChild(input_8_3);
+			q_8Col.appendChild(form_8);
+			//stop row 4
+			
+			//start row 5
+			var q_9_10Row = document.createElement("div");
+            q_9_10Row.classList.add("row");
+			q_9_10Row.classList.add("text-center");
+            quizContainer.appendChild(q_9_10Row);
+			
+			var q_9Col = document.createElement("div");
+            q_9Col.classList.add("col-lg-5");
+			q_9Col.classList.add("col-md-5");
+            q_9Col.classList.add("col-sm-12");
+			q_9Col.style.margin = "10px 10px 10px 10px";
+			q_9Col.style.background = "#1947bd";
+			q_9Col.style.borderRadius = "10px";
+			q_9Col.style.cursor = "crosshair";
+            q_9_10Row.appendChild(q_9Col);
+			
+			var question_9 = document.createElement("p");
+            question_9.classList.add("h5");
+            question_9.classList.add("text-center");
+            question_9.classList.add("text-white");
+            question_9.style.padding = "1em";
+            var question_9Text = document.createTextNode(data.quiz.q9.question);
+            question_9.appendChild(question_9Text);
+            q_9Col.appendChild(question_9);
+			
+			var form_9 = document.createElement("div");
+			form_9.classList.add("form-check");
+			var input_9_1 = document.createElement("div");
+			input_9_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_9" id="op_9.1">' + data.quiz.q9.options[0] + '<br><br>';
+			input_9_1.classList.add("text-center");
+			input_9_1.classList.add("text-white");
+			var input_9_2 = document.createElement("div");
+			input_9_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_9" id="op_9.2">' + data.quiz.q9.options[1] + '<br><br>';
+			input_9_2.classList.add("text-center");
+			input_9_2.classList.add("text-white");
+			var input_9_3 = document.createElement("div");
+			input_9_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_9" id="op_9.3">' + data.quiz.q9.options[2] + '<br><br>';
+			input_9_3.classList.add("text-center");
+			input_9_3.classList.add("text-white");
+			form_9.appendChild(input_9_1);
+			form_9.appendChild(input_9_2);
+			form_9.appendChild(input_9_3);
+			q_9Col.appendChild(form_9);
+			
+			var q_10Col = document.createElement("div");
+            q_10Col.classList.add("col-lg-5");
+			q_10Col.classList.add("col-md-5");
+            q_10Col.classList.add("col-sm-12");
+			q_10Col.style.margin = "10px 10px 10px 10px";
+			q_10Col.style.background = "#1947bd";
+			q_10Col.style.borderRadius = "10px";
+			q_10Col.style.cursor = "crosshair";
+            q_9_10Row.appendChild(q_10Col);
+			
+			var question_10 = document.createElement("p");
+            question_10.classList.add("h5");
+            question_10.classList.add("text-center");
+            question_10.classList.add("text-white");
+            question_10.style.padding = "1em";
+            var question_10Text = document.createTextNode(data.quiz.q10.question);
+            question_10.appendChild(question_10Text);
+            q_10Col.appendChild(question_10);
+			
+			var form_10 = document.createElement("div");
+			form_10.classList.add("form-check");
+			var input_10_1 = document.createElement("div");
+			input_10_1.innerHTML += '<input class="form-check-input" type="radio" name="gr_10" id="op_10.1">' + data.quiz.q10.options[0] + '<br><br>';
+			input_10_1.classList.add("text-center");
+			input_10_1.classList.add("text-white");
+			var input_10_2 = document.createElement("div");
+			input_10_2.innerHTML += '<input class="form-check-input" type="radio" name="gr_10" id="op_10.2">' + data.quiz.q10.options[1] + '<br><br>';
+			input_10_2.classList.add("text-center");
+			input_10_2.classList.add("text-white");
+			var input_10_3 = document.createElement("div");
+			input_10_3.innerHTML += '<input class="form-check-input" type="radio" name="gr_10" id="op_10.3">' + data.quiz.q10.options[2] + '<br><br>';
+			input_10_3.classList.add("text-center");
+			input_10_3.classList.add("text-white");
+			form_10.appendChild(input_10_1);
+			form_10.appendChild(input_10_2);
+			form_10.appendChild(input_10_3);
+			q_10Col.appendChild(form_10); 
+			//stop row 5
+			// stop quiz container
+			
+			// start button
+			var buttonDiv = document.createElement("div");
+			buttonDiv.classList.add("container-fluid");
+			buttonDiv.classList.add("text-center");
+			bodyContainer.appendChild(buttonDiv);
+			
+			var buttonRow = document.createElement("div");
+			buttonRow.classList.add("row");
+			buttonRow.classList.add("text-center");
+			buttonDiv.appendChild(buttonRow);
+			
+			var buttonCol = document.createElement("div");
+			buttonCol.classList.add("col");
+			buttonCol.classList.add("tex-center");
+			var button = document.createElement("button");
+			button.classList.add("btn");
+			button.classList.add("btn-primary");
+			button.classList.add("text-center");
+			button.classList.add("btn-lg");
+			button.style.marginTop = "20px";
+			button.style.marginBottom = "20px";
+			button.innerHTML = "See the result of test";
+			buttonCol.appendChild(button);
+			buttonRow.appendChild(buttonCol);
+			// stop button
+			
+			// start info
+			var infoDiv = document.createElement("div");
+			infoDiv.classList.add("container-fluid");
+			bodyContainer.appendChild(infoDiv);
+			
+			var infoRow = document.createElement("div");
+			infoRow.classList.add("row");
+			infoDiv.appendChild(infoRow);
+			
+			var infoCol = document.createElement("div");
+			infoCol.classList.add("col");
+			infoRow.appendChild(infoCol);
+
+			var info = document.createElement("h1");
+			info.classList.add("text-center");
+			info.classList.add("display-5");
+			infoCol.appendChild(info);
+			//stop info
+           
+			// start result
+			var resultDiv = document.createElement("div");
+			resultDiv.classList.add("container-fluid");
+			bodyContainer.appendChild(resultDiv);
+			
+			var resultRow = document.createElement("div");
+			resultRow.classList.add("row");
+			resultDiv.appendChild(resultRow);
+			
+			var resultCol = document.createElement("div");
+			resultCol.classList.add("col");
+			resultRow.appendChild(resultCol);
+
+			var result = document.createElement("h1");
+			result.classList.add("text-center");
+			result.classList.add("text-white");
+			result.classList.add("display-4");
+			resultCol.appendChild(result);
+			//stop result
+			
+			// start button function
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_1.1").checked === false) &&
+				(document.getElementById("op_1.2").checked === false) &&
+				(document.getElementById("op_1.3").checked === false)){
+					q_1Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_1Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+					
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_2.1").checked === false) &&
+				(document.getElementById("op_2.2").checked === false) &&
+				(document.getElementById("op_2.3").checked === false)){
+					q_2Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_2Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_3.1").checked === false) &&
+				(document.getElementById("op_3.2").checked === false) &&
+				(document.getElementById("op_3.3").checked === false)){
+					q_3Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_3Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_4.1").checked === false) &&
+				(document.getElementById("op_4.2").checked === false) &&
+				(document.getElementById("op_4.3").checked === false)){
+					q_4Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_4Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_5.1").checked === false) &&
+				(document.getElementById("op_5.2").checked === false) &&
+				(document.getElementById("op_5.3").checked === false)){
+					q_5Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_5Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_6.1").checked === false) &&
+				(document.getElementById("op_6.2").checked === false) &&
+				(document.getElementById("op_6.3").checked === false)){
+					q_6Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_6Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_7.1").checked === false) &&
+				(document.getElementById("op_7.2").checked === false) &&
+				(document.getElementById("op_7.3").checked === false)){
+					q_7Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_7Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_8.1").checked === false) &&
+				(document.getElementById("op_8.2").checked === false) &&
+				(document.getElementById("op_8.3").checked === false)){
+					q_8Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_8Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_9.1").checked === false) &&
+				(document.getElementById("op_9.2").checked === false) &&
+				(document.getElementById("op_9.3").checked === false)){
+					q_9Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_9Col.style.background = "#1947bd";
+					info.innerHTML = "Congratulations! You answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				if((document.getElementById("op_10.1").checked === false) &&
+				(document.getElementById("op_10.2").checked === false) &&
+				(document.getElementById("op_10.3").checked === false)){
+					q_10Col.style.background = "#fc035e";
+					info.innerHTML = "You did not answer one or more questions!";
+					info.classList.add("text-info");
+				} else {
+					q_10Col.style.background = "#1947bd";
+					info.innerHTML = "Please check that you have answered all the questions!";
+					info.classList.add("text-info");
+				}
+			});
+			
+			button.addEventListener("click", function(){
+				var res_1_1 = document.getElementById("op_1.1");
+				if(document.getElementById("op_1.1").checked === true){
+					res_1_1 = 1;
+				}else {
+					res_1_1 = 0;
+				}
+				var res_1_2 = document.getElementById("op_1.2");
+				if(document.getElementById("op_1.2").checked === true){
+					res_1_2 = 2;
+				}else {
+					res_1_2 = 0;
+				}
+				var res_1_3 = document.getElementById("op_1.3");
+				if(document.getElementById("op_1.3").checked === true){
+					res_1_3 = 3;
+				}else {
+					res_1_3 = 0;
+				}
+				var res_2_1 = document.getElementById("op_2.1");
+				if(document.getElementById("op_2.1").checked === true){
+					res_2_1 = 1;
+				}else {
+					res_2_1 = 0;
+				}
+				var res_2_2 = document.getElementById("op_2.2");
+				if(document.getElementById("op_2.2").checked === true){
+					res_2_2 = 2;
+				}else {
+					res_2_2 = 0;
+				}
+				var res_2_3 = document.getElementById("op_2.3");
+				if(document.getElementById("op_2.3").checked === true){
+					res_2_3 = 3;
+				}else {
+					res_2_3 = 0;
+				}
+				var res_3_1 = document.getElementById("op_3.1");
+				if(document.getElementById("op_3.1").checked === true){
+					res_3_1 = 1;
+				}else {
+					res_3_1 = 0;
+				}
+				var res_3_2 = document.getElementById("op_3.2");
+				if(document.getElementById("op_3.2").checked === true){
+					res_3_2 = 2;
+				}else {
+					res_3_2 = 0;
+				}
+				var res_3_3 = document.getElementById("op_3.3");
+				if(document.getElementById("op_3.3").checked === true){
+					res_3_3 = 3;
+				}else {
+					res_3_3 = 0;
+				}
+				var res_4_1 = document.getElementById("op_4.1");
+				if(document.getElementById("op_4.1").checked === true){
+					res_4_1 = 1;
+				}else {
+					res_4_1 = 0;
+				}
+				var res_4_2 = document.getElementById("op_4.2");
+				if(document.getElementById("op_4.2").checked === true){
+					res_4_2 = 2;
+				}else {
+					res_4_2 = 0;
+				}
+				var res_4_3 = document.getElementById("op_4.3");
+				if(document.getElementById("op_4.3").checked === true){
+					res_4_3 = 3;
+				}else {
+					res_4_3 = 0;
+				}
+				var res_5_1 = document.getElementById("op_5.1");
+				if(document.getElementById("op_5.1").checked === true){
+					res_5_1 = 1;
+				}else {
+					res_5_1 = 0;
+				}
+				var res_5_2 = document.getElementById("op_5.2");
+				if(document.getElementById("op_5.2").checked === true){
+					res_5_2 = 2;
+				}else {
+					res_5_2 = 0;
+				}
+				var res_5_3 = document.getElementById("op_5.3");
+				if(document.getElementById("op_5.3").checked === true){
+					res_5_3 = 3;
+				}else {
+					res_5_3 = 0;
+				}
+				var res_6_1 = document.getElementById("op_6.1");
+				if(document.getElementById("op_6.1").checked === true){
+					res_6_1 = 1;
+				}else {
+					res_6_1 = 0;
+				}
+				var res_6_2 = document.getElementById("op_6.2");
+				if(document.getElementById("op_6.2").checked === true){
+					res_6_2 = 2;
+				}else {
+					res_6_2 = 0;
+				}
+				var res_6_3 = document.getElementById("op_6.3");
+				if(document.getElementById("op_6.3").checked === true){
+					res_6_3 = 3;
+				}else {
+					res_6_3 = 0;
+				}
+				var res_7_1 = document.getElementById("op_7.1");
+				if(document.getElementById("op_7.1").checked === true){
+					res_7_1 = 1;
+				}else {
+					res_7_1 = 0;
+				}
+				var res_7_2 = document.getElementById("op_7.2");
+				if(document.getElementById("op_7.2").checked === true){
+					res_7_2 = 2;
+				}else {
+					res_7_2 = 0;
+				}
+				var res_7_3 = document.getElementById("op_7.3");
+				if(document.getElementById("op_7.3").checked === true){
+					res_7_3 = 3;
+				}else {
+					res_7_3 = 0;
+				}
+				var res_8_1 = document.getElementById("op_8.1");
+				if(document.getElementById("op_8.1").checked === true){
+					res_8_1 = 1;
+				}else {
+					res_8_1 = 0;
+				}
+				var res_8_2 = document.getElementById("op_8.2");
+				if(document.getElementById("op_8.2").checked === true){
+					res_8_2 = 2;
+				}else {
+					res_8_2 = 0;
+				}
+				var res_8_3 = document.getElementById("op_8.3");
+				if(document.getElementById("op_8.3").checked === true){
+					res_8_3 = 3;
+				}else {
+					res_8_3 = 0;
+				}
+				var res_9_1 = document.getElementById("op_9.1");
+				if(document.getElementById("op_9.1").checked === true){
+					res_9_1 = 1;
+				}else {
+					res_9_1 = 0;
+				}
+				var res_9_2 = document.getElementById("op_9.2");
+				if(document.getElementById("op_9.2").checked === true){
+					res_9_2 = 2;
+				}else {
+					res_9_2 = 0;
+				}
+				var res_9_3 = document.getElementById("op_9.3");
+				if(document.getElementById("op_9.3").checked === true){
+					res_9_3 = 3;
+				}else {
+					res_9_3 = 0;
+				}
+				var res_10_1 = document.getElementById("op_10.1");
+				if(document.getElementById("op_10.1").checked === true){
+					res_10_1 = 1;
+				}else {
+					res_10_1 = 0;
+				}
+				var res_10_2 = document.getElementById("op_10.2");
+				if(document.getElementById("op_10.2").checked === true){
+					res_10_2 = 2;
+				}else {
+					res_10_2 = 0;
+				}
+				var res_10_3 = document.getElementById("op_10.3");
+				if(document.getElementById("op_10.3").checked === true){
+					res_10_3 = 3;
+				}else {
+					res_10_3 = 0;
+				}
+				
+				const finalRes = [res_1_1, res_1_2, res_1_3, res_2_1, res_2_2, res_2_3, res_3_1, res_3_2, res_3_3, res_4_1, res_4_2, res_4_3, res_5_1, res_5_2, res_5_3, res_6_1, res_6_2, res_6_3, res_7_1, res_7_2, res_7_3, res_8_1, res_8_2, res_8_3, res_9_1, res_9_2, res_9_3, res_10_1, res_10_2, res_10_3];
+				let sum = 0;
+				for (let i = 0; i < finalRes.length; i++) {
+					sum += finalRes[i];
+				}
+				if((sum>0)&&(sum<=10)){
+					result.innerHTML = "You not consider your own home to be comfortable. The space in your house is not very generous and that is why you do not like to spend too much time in it. The view that your house offers you is not an asset. Given all this, we recommend that you recondition the house or move out of it as soon as possible.";
+					result.classList.add("text-success");
+				}else if((sum>=11)&&(sum<=20)){
+					result.innerHTML = "You have a pretty good opinion of your own house. It is a house in which you have become accustomed to living and in which you return with pleasure. You are aware that your house also has defects, but other qualities of your house make it quite comfortable. We recommend that you try to recondition only where you think it is strictly necessary.";
+					result.classList.add("text-success");
+				}else if((sum>=21)&&(sum<=30)){
+					result.innerHTML = "Your house has all the qualities you could ask for: comfortable, spacious, possibly with a beautiful view, a house where you really like to live and from which you are not going to move too soon. We recommend that you host your friends as often as possible.";
+					result.classList.add("text-success");
+				}
+				console.log(sum);
+			});
+			// stop button function
+			
+			// start bootom text
+			var bootomContainer = document.createElement("div");
+            bootomContainer.classList.add("container-fluid");
+            bodyContainer.appendChild(bootomContainer);
+
+            var bootomRow = document.createElement("div");
+            bootomRow.classList.add("row");
+            bootomContainer.appendChild(bootomRow);
+
+            var bootomCol = document.createElement("div");
+            bootomCol.classList.add("col");
+            bootomRow.appendChild(bootomCol);
+
+            var bootomTitle = document.createElement("p");
+            bootomTitle.classList.add("h3");
+            bootomTitle.classList.add("text-center");
+            bootomTitle.classList.add("text-white");
+            bootomTitle.style.padding = "20px";
+            var bootomText1 = document.createTextNode("This site is just for fun and should be treated as such.");
+			var bootomBr = document.createElement("br");
+			var bootomText2 = document.createTextNode("The results are neither professional nor conclusive.");
+            bootomTitle.appendChild(bootomText1);
+			bootomTitle.appendChild(bootomBr);
+			bootomTitle.appendChild(bootomText2);
+            bootomCol.appendChild(bootomTitle);
+			// start bootom text
+			
+			// start footer
+			var footerContainer = document.createElement("div");
+            footerContainer.classList.add("container-fluid");
+            bodyContainer.appendChild(footerContainer);
+
+            var footerRow = document.createElement("div");
+            footerRow.classList.add("row");
+            footerContainer.appendChild(footerRow);
+
+            var footerCol = document.createElement("div");
+            footerCol.classList.add("col");
+            footerRow.appendChild(footerCol);
+
+			var footerLink = document.createElement("a");
+			footerLink.href = "../index.html";
+			footerLink.setAttribute("target", "_blank");
+			footerLink.style.textDecoration = "none";
+			footerCol.appendChild(footerLink);
+
+            var footerTitle = document.createElement("p");
+            footerTitle.classList.add("h6");
+            footerTitle.classList.add("text-center");
+            footerTitle.classList.add("text-white");
+            footerTitle.style.padding = "10px";
+            var footerText = document.createTextNode("Created by Dragoş Vatră © 2021-2022 All rights reserved");
+            footerTitle.appendChild(footerText);
+            footerLink.appendChild(footerTitle);
+			// stop footer
+			// start session storage
+			sessionStorage.setItem('key', JSON.stringify({exp: new Date() + 1, data: data}));
+			function checkExpired() {
+				var exp = sessionStorage.getItem('exp');
+				if (exp > new Date())
+				console.log('expired');
+			}
+			// stop session storage
+        </script>
+        <!-- Stop Javascript -->
+        
+    </body>
+<!-- Stop <body> elements -->
+</html>
+<!-- Stop Web Page -->

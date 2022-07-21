@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Cozy Home Test - Login - Created and built by Dragoș Vatră</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png"/>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="error" id="error-1"></div>
+            <div class="error" id="error-2"></div>
+            <div class="error" id="error-3"></div>
+            <div class="error" id="error-4"></div>
+            <div class="error" id="error-5"></div><br>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username" value="" required>
+            </div>
+            <div class="form__input-group">
+                <input type="text" id="confirmUsername" class="form__input" autofocus placeholder="Confirm Username" value="" required>
+            </div>
+            <div class="form__input-group">
+                <input type="password" id="passwordUsername" class="form__input" autofocus placeholder="Password" value="" required>
+            </div>
+            <div class="form__input-group">
+                <input type="password" id="confirmPasswordUsername" class="form__input" autofocus placeholder="Confirm password" value="" required>
+            </div>
+            <div class="form__input-group">
+                <a id="register" class="form__button" type="submit" onclick="redirect()">Register</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+</body>
